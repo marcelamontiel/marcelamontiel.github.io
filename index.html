@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Juegos de Mesa</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/Modulo2.css">
@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style="background-color: #102b1e;">
 
     <nav class="navbar navbar-expand-md navbar-dark" style=" background-color: #163d2b;">
         <a class="navbar-brand" href="#"><img src="img/Diseño sin título.png" width="auto" height="100" class="d-inline-block align-top ms-4" alt=""></a>
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">TODOS LOS JUEGOS</a>
+                <a class="nav-link" href="index.html">TODOS LOS JUEGOS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">PUZZLES</a>
@@ -36,16 +36,16 @@
         </div>  
 
         <form class="form-inline m-3">
-            <button class="btn btn-outline-green btn-success" style="color: white ;" type="button">Carro de Compra</button>
+            <a href="/Carrito.html"><button href="/Carrito.html" class="btn btn-outline-green btn-success" style="color: white ;"  type="button">Carro de Compra</button></a>
         </form> 
     </nav>   
 
 
-    <aside class="p-0">
+    <aside >
         <!-- Bootstrap Static Header -->
-          <div style="background: url(img/game-340574_1920.jpg);"  class="jumbotron bg-cover text-white m-0 p-0">
-              <div class="fondoimagen" style="background-color: #163d2b8e">
-              <div class="container1  text-center">
+          <div style="background: url(img/game-340574_1920.jpg);"  class="jumbotron bg-cover text-white m-0 p-0 w-100">
+              <div class="fondoimagen p-10" style="background-color: #163d2b8e">
+              <div class="container1 py-5 text-center">
                       
                   <h1 class="display-4">START</h1>
                   <p class="font-weight-bold">Juegos de Mesa</p>
@@ -59,16 +59,16 @@
 
       <main>
 
-        <h1 class="display-4 text-center" style="color: rgb(255, 255, 255); background-color: #102b1ec9">Conoce nuestros juegos de Mesa en START</h1>
+        <h1 class="display-4 text-center mb-2" style="color: rgb(255, 255, 255); background-color: #102b1ec9">Conoce nuestros juegos de Mesa en START</h1>
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-3 g-3">
 
                                            
                 <div class="col-md Presentacion ">
                     <div class="p-3">
-                        <a href="" class="Ajuego">
-                            <div class="card p-3 mt-1" style="width:250px">
+                        <a href="TheMind.html" class="Ajuego">
+                            <div class="card p-3 mt-1 -100" style="width:250px">
                                 <img class="card-img-top" src="img/the-mind1.jpg" alt="Card image" style="width:100%">
                                 <div class="centrar align-item">
                                 <div class="card-body">
@@ -85,7 +85,7 @@
                                             
                     <div class="col-md Presentacion  ">
                         <div class="p-3 ">
-                            <a href="" class="Ajuego">
+                            <a href="Display.html" class="Ajuego">
                                 <div class="card p-3 mt-1" style="width: 250px">
                                     <img class="card-img-top" src="img/display-sobres-pokemon-espada-y-escudo-tempestad-plateada.jpg" alt="Card image" style="width:100%">
                                     <div class="card-body">
@@ -102,7 +102,7 @@
                                                                       
                 <div class="col-md Presentacion  ">
                     <div class="p-3 ">
-                        <a href="" class="Ajuego">
+                        <a href="Dixit-daydreams.html" class="Ajuego">
                             <div class="card p-3 mt-1" style="width:250px">
                                 <img class="card-img-top" src="img/dixit-daydreams.jpg" alt="Card image" style="width:100%">
                                 <div class="card-body">
@@ -119,7 +119,7 @@
 
 
 
-            <div class="row ">
+            <div class="row ow-cols-1 row-cols-md-3 g-3 ">
 
               
               <div class="col Presentacion  ">
@@ -169,7 +169,7 @@
           </div>
 
 
-          <div class="row">
+          <div class="row ow-cols-1 row-cols-md-3 g-3">
 
               
               <div class="col Presentacion  ">
@@ -217,11 +217,17 @@
                   </div>
               </div>
           </div>
-          
-
+        
 
       </div>
     </main>
+    <footer id="sticky-footer" class=" text-white-50" style="background-color: #163d2b">
+        <div class="container text-center">
 
+          <img src="img/Diseño sin título.png" width="auto" height="200" class="justify-content-between" alt="">
+          <small>Copyright &copy; Marcela Montiel</small>
+        </div>
+        
+      </footer>
 </body>
 </html> 

@@ -2,6 +2,7 @@ main{
     background-color: #163d2b;
 }
 
+
 .container-fluid {
 	position: relative;
     display: flex;
@@ -17,7 +18,7 @@ main{
     background-size: cover !important;
 }
 
-.container-fluid .card {
+.container-fluid .card{
 	position: relative;
 	width: 300px;
 	height: 420px;
@@ -43,7 +44,135 @@ a.Ajuego:link {
 }
 
 div.card:hover{
-    background-color: rgb(255, 169, 88);
-	color: black;
+    background-color: rgb(146, 82, 23);
+	color: rgb(255, 241, 241);
 }
 
+/* DISEÑO JUEGO INDIVIDUAL */
+
+
+.juego{
+	padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cardjuego{
+    max-width: auto;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    }
+
+div.cardjuego:hover{
+	background-color: rgb(146, 82, 23);
+	color: rgb(255, 255, 255);
+}
+
+.container .cardjuego{
+	position: relative;
+	background: rgba(206, 57, 57, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+
+	@media(max-width:768px){
+    
+		.cardjuego{
+			width: 100%;
+			padding: 1.5rem
+			}
+		}
+			
+	   
+	
+		.img-fluid{
+			height: fit-content;
+			width: 100%;
+			border-radius: 1%; 
+			margin: 15px;   
+			}
+
+/* ESTRELLAS */
+
+#form {
+	width: 250px;
+	margin: 0 auto;
+	height: 50px;
+  }
+  
+  #form p {
+	text-align: center;
+  }
+  
+  #form label {
+	font-size: 20px;
+  }
+  
+  input[type="radio"] {
+	display: none;
+  }
+  
+  label {
+	color: grey;
+  }
+  
+  .clasificacion {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+	color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+	color: orange;
+  }
+
+
+/* CARRITO DE COMPRA */
+
+
+   .product-details {
+    padding: 1px;
+  }
+
+  .cart {
+	color: aliceblue;
+  }
+  
+  .line {
+    border-bottom: 1px solid #163d2b;
+  }
+  
+  .information span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .information {
+    margin-bottom: 5px;
+  }
+  
+  .items, .cart {
+    position: relative;
+	background: #1f583e;
+	margin: 20px;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.233);
+	border-radius: 20px;
+  }
+  .items{
+	background-color: azure;
+	color: black;
+  }
+  .spec {
+    font-size: 11px;
+  }
