@@ -35,11 +35,75 @@
             </ul>
         </div>  
 
-        <form class="form-inline m-3">
-            <a href="/Carrito.html"><button href="/Carrito.html" class="btn btn-outline-green btn-success" style="color: white ;"  type="button">Carro de Compra</button></a>
-        </form> 
-    </nav>   
+        <!-- boton carrito -->
 
+        <form class="form-inline m-3">
+            <a href="#" id="btn-carrito" class="btn btn-outline-green btn-success " data-toggle="modal" data-target="#cartModal" style="color: white ;"  type="button">Carro de Compra
+              <span class="tag is-gray" id=""><strong>1</strong></span>
+            </a>
+        </form> 
+        <!-- boton carrito -->
+   
+        <!-- modal carrito -->
+        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Carro de Compra
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-image">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cant</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Borrar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="w-25">
+                          <img src="/img/dixit-daydreams.jpg" class="img-fluid img-thumbnail" alt="Sheep" width="70">
+                        </td>
+                        <td>Dixit Daydreams</td>
+                        <td>$19.990</td>
+                        <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+                        <td>$19.990</td>
+                        <td>
+                          <a href="#" class="btn btn-danger btn-sm">
+                            <i class="fa fa-times">Borrar</i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table> 
+
+                  <h6 class="d-flex justify-content-end">Descuento: <span class="discount text-danger"> %0</span></h6>
+                  <div class="d-flex justify-content-end">
+                    <h5>Total: <span class="price text-success">$19.990</span></h5>
+                  </div>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <a href="/Carrito.html"><button type="button" class="btn btn-success">Pago</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <!-- modal carrito -->
+   
+   
+   
+    </nav>   
 
     <aside >
         <!-- Bootstrap Static Header -->
@@ -54,173 +118,26 @@
               </div>
           </div>
           </div>
+
+          <!-- Bootstrap Static Header -->
     </aside>
 
 
-      <main>
+    <main>
 
-        <h1 class="display-4 text-center mb-2" style="color: rgb(255, 255, 255); background-color: #102b1ec9">Conoce nuestros juegos de Mesa en START</h1>
+     
+
+        <!-- Catalogo -->
 
         <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
-
-                                           
-                <div class="col-md Presentacion ">
-                    <div class="p-3">
-                        <a href="TheMind.html" class="Ajuego">
-                            <div class="card p-3 mt-1 -100" style="width:250px">
-                                <img class="card-img-top" src="img/the-mind1.jpg" alt="Card image" style="width:100%">
-                                <div class="centrar align-item">
-                                <div class="card-body">
-                                    <h4 class="card-title">The Mind</h4>
-                                    <p class="card-text">$10.990</p>
-                                    <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>   
-                                </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                                            
-                    <div class="col-md Presentacion  ">
-                        <div class="p-3 ">
-                            <a href="Display.html" class="Ajuego">
-                                <div class="card p-3 mt-1" style="width: 250px">
-                                    <img class="card-img-top" src="img/display-sobres-pokemon-espada-y-escudo-tempestad-plateada.jpg" alt="Card image" style="width:100%">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Display Sobres Pokémon</h4>
-                                        <p class="card-text">$172.440</p>
-                                        <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                                                                      
-                <div class="col-md Presentacion  ">
-                    <div class="p-3 ">
-                        <a href="Dixit-daydreams.html" class="Ajuego">
-                            <div class="card p-3 mt-1" style="width:250px">
-                                <img class="card-img-top" src="img/dixit-daydreams.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">Dixit Daydreams</h4>
-                                    <p class="card-text">$19.990</p>
-                                    <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                                </div>
-                            </div>
-                        </a>
-                    </div>   
-                </div>
+            <div class="row row-cols-1 row-cols-md-3 g-3" id="catalogo">
             </div>
-            
+        </div>
+        <!-- Catalogo -->
 
-
-
-            <div class="row ow-cols-1 row-cols-md-3 g-3 ">
-
-              
-              <div class="col Presentacion  ">
-                  <div class="p-3 ">
-                      <a href="/Dixit-daydreams.html" class="Ajuego">
-                          <div class="card p-3 mt-1  " style="width:250px">
-                              <img class="card-img-top" src="img/exit-el-museo-misterioso.jpg" alt="Card image" style="width:100%">
-                              <div class="card-body">
-                                  <h4 class="card-title">Exit El museo misterioso</h4>
-                                  <p class="card-text">$10.990</p>
-                                  <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-
-              <div class="col Presentacion  ">
-                  <div class="p-3 ">
-                      <a href="/Dixit-daydreams.html" class="Ajuego">
-                          <div class="card p-3 mt-1  " style="width:250px">
-                              <img class="card-img-top" src="img/exploding-kittens-base-en-espanol.jpg" alt="Card image" style="width:100%">
-                              <div class="card-body">
-                                  <h4 class="card-title">Exploding Kittens</h4>
-                                  <p class="card-text">$19.990</p>
-                                  <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-
-              <div class="col Presentacion  ">
-                  <div class="p-3 ">
-                      <a href="/TheMind.html" class="Ajuego">
-                          <div class="card p-3 mt-1  " style="width:250px">
-                              <img class="card-img-top" src="img/stella-dixit-universe.jpg" alt="Card image" style="width:100%">
-                              <div class="card-body">
-                                  <h4 class="card-title">Stella Dixit Universe</h4>
-                                  <p class="card-text">$34.990</p>
-                                  <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-
-
-          <div class="row ow-cols-1 row-cols-md-3 g-3">
-
-              
-              <div class="col Presentacion  ">
-                  <div class="p-3 ">
-                      <a href="/Display.html" class="Ajuego">
-                          <div class="card p-3 mt-1 " style="width:250px">
-                              <img class="card-img-top" src="img/the-island.jpg" alt="Card image" style="width:100%">
-                              <div class="card-body">
-                                  <h4 class="card-title">The Island</h4>
-                                  <p class="card-text">$29.990</p>
-                                  <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-
-              <div class="col Presentacion  ">
-                  <div class="p-3 ">
-                      <a href="/Dixit-daydreams.html" class="Ajuego">
-                          <div class="card p-3 mt-1  " style="width:250px">
-                              <img class="card-img-top" src="img/throw-throw-burrito-edicion-extrema-.jpg" alt="Card image" style="width:100%">
-                              <div class="card-body">
-                                  <h4 class="card-title">Throw Throw Burrito</h4>
-                                  <p class="card-text">$24.990</p>
-                                  <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-
-              <div class="col Presentacion  ">
-                  <div class="p-3 ">
-                      <a href="/TheMind.html" class="Ajuego">
-                          <div class="card p-3 mt-1 " style="width:250px">
-                              <img class="card-img-top" src="img/azul-jardin-de-la-reina.jpg" alt="Card image" style="width:100%">
-                              <div class="card-body">
-                                  <h4 class="card-title">Azul: Jardín de la Reina</h4>
-                                  <p class="card-text">$44.990</p>
-                                  <a href="/Carrito.html" role="button" class="btn btn-outline-green btn-success px-5">Añadir al carrito</a>  
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-        
-
-      </div>
     </main>
+
+            <!-- Footer -->
     <footer id="sticky-footer" class=" text-white-50" style="background-color: #163d2b">
         <div class="container text-center">
 
@@ -229,5 +146,8 @@
         </div>
         
       </footer>
+            <!-- Footer -->
+
+      <script src="./js/app.js"></script>
 </body>
 </html> 
