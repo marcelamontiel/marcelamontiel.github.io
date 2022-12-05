@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Juegos de Mesa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/Modulo2.css">
+</head>
+<body style="background-color: #102b1e;">
+
+    <nav class="navbar navbar-expand-md navbar-dark" style=" background-color: #163d2b;">
+        <a class="navbar-brand" href="#"><img src="img/Diseño sin título.png" width="auto" height="100" class="d-inline-block align-top ms-4" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">TODOS LOS JUEGOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PUZZLES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NAIPES</a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="#">APRENDE A JUGAR</a>
+            </li>  
+            </ul>
+        </div>  
+        <!-- Open The Modal -->
+        
+
+        <!-- boton carrito -->
+        <form class="form-inline m-3">
+            <a href="#" id="btn_carrito" class="btn btn-outline-green btn-success " data-bs-toggle="offcanvas" data-bs-target="#demo" style="color: white ;"  type="button">Carro de Compra
+              
+            </a>
+        </form> 
+        <!-- boton carrito -->
+     
+
+
+
+    </nav>   
+
+    <aside >
+        <!-- Bootstrap Static Header -->
+          <div style="background: url(img/game-340574_1920.jpg);"  class="jumbotron bg-cover text-white m-0 p-0 w-100">
+              <div class="fondoimagen p-10" style="background-color: #163d2b8e">
+              <div class="container1 py-5 text-center">
+                      
+                  <h1 class="display-4">START</h1>
+                  <p class="font-weight-bold">Juegos de Mesa</p>
+                  <p class="font-italic " style="color: rgb(255, 255, 255);">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                  
+                  <a><button id="myBtn" class="btn btn-warning">Suscribete</button></a>
+              </div>
+          </div>
+          </div>
+          <!-- Bootstrap Static Header -->
+    </aside>
+
+
+    <main>
+        <!-- Catalogo -->
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 g-3 products" id="catalogo">
+            </div>
+        </div>
+        <!-- Catalogo -->
+    </main>
+
+    <!-- carrito -->
+    <div >
+      <div class="offcanvas offcanvas-end" style="background-color: #ffffff;" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Carrito de Compra</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+  
+        <hr size="1px" color="black">
+      
+          <table >
+            <thead>
+              <tr>
+                <th> </th>
+                <th>Producto</th>
+                <th>Cant</th>
+                <th>Precio</th>
+                <th>Total</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody id="productosCarrito">
+            </tbody>
+            <tfoot >
+              <tr >
+                <td colspan="3"><button class="btn btn-outline-green btn-success" type="button">Pagar</button></td>
+                <td colspan="3"><h6>Total:<strong id="totalProductos"></strong> </h6></td>
+              </tr>
+            </tfoot>
+          </table>
+      </div> 
+    </div>
+    <!-- carrito -->
+
+
+    <!-- registro -->
+
+    <div id="myModal" class="modal">
+      <section>
+        <div class="container py-5 h-100 ">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card registro" style="border-radius: 1rem;">
+                <div class="card-body text-center">
+
+                  <div>
+                    <span class="close">&times;</span>
+                    <h2 class="fw-bold  text-uppercase">Registro</h2>
+                  </div>
+
+                  <div class="mb-md-5 mt-md-4 pb-5">
+                    <p class="text-50 mb-5">Registra tu correo y contraseña</p>
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                      <label class="form-label" for="typeEmailX">Correo</label>
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                      <label class="form-label" for="typePasswordX">Contraseña</label>
+                    </div>
+                    <p class="small mb-5 pb-lg-2"><a class="text-50" href="#!">¿Olvidaste tu contraseña?</a></p>
+                    <button class="btn btn-outline-green btn-success " type="submit">Entrar</button>
+                  </div>
+
+                  <div>
+                    <p class="mb-0">Aún no te unes a la página? <a href="#!" class="fw-bold">Registrate!</a></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+   
+
+
+            <!-- Footer -->
+    <footer id="sticky-footer" class=" text-white-50" style="background-color: #163d2b">
+        <div class="container text-center">
+
+          <img src="img/Diseño sin título.png" width="auto" height="200" class="justify-content-between" alt="">
+          <small>Copyright &copy; Marcela Montiel</small>
+        </div>
+        
+      </footer>
+            <!-- Footer -->
+
+            
+
+      <script src="./js/app.js"></script>
+      
+</body>
+</html> 
