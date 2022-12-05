@@ -3,15 +3,15 @@
         return document.querySelector(selector)
     }
     function Carrito(){
-        this.catalogo = [{id:'P01',nombre:'The Main',precio:10900,imagen:'img/the-mind1.jpg',html:'/TheMind.html'},
-                        {id:'P02',nombre:'Display Sobres Pokemon',precio:172440,imagen:'img/display-sobres-pokemon-espada-y-escudo-tempestad-plateada.jpg',html:'/Display.html'},
-                        {id:'P03',nombre:'Dixit Daydreams',precio:19990,imagen:'img/dixit-daydreams.jpg',html:'/Dixit-daydreams.html'},
-                        {id:'P04',nombre:'Exit El museo misterioso',precio:10900,imagen:'img/exit-el-museo-misterioso.jpg',html:'/TheMind.html'},
-                        {id:'P05',nombre:'Exploding Kittens',precio:19990,imagen:'img/exploding-kittens-base-en-espanol.jpg',html:'/Display.html'},
-                        {id:'P06',nombre:'Stella Dixit Universe',precio:34990,imagen:'img/stella-dixit-universe.jpg',html:'/Dixit-daydreams.html'},
-                        {id:'P07',nombre:'The Island',precio:29990,imagen:'img/the-island.jpg',html:'/TheMind.html'},
-                        {id:'P08',nombre:'Throw Throw Burrito',precio:24990,imagen:'img/throw-throw-burrito-edicion-extrema-.jpg',html:'/Display.html'},
-                        {id:'P09',nombre:'Azul: Jardín de la Reina',precio:44990,imagen:'img/azul-jardin-de-la-reina.jpg',html:'/Dixit-daydreams.html'},]
+        this.catalogo = [{id:'P01',nombre:'The Main',precio:10900,imagen:'/img/the-mind1.jpg',html:'/TheMind.html'},
+                        {id:'P02',nombre:'Display Sobres Pokemon',precio:172440,imagen:'/img/display-sobres-pokemon-espada-y-escudo-tempestad-plateada.jpg',html:'/Display.html'},
+                        {id:'P03',nombre:'Dixit Daydreams',precio:19990,imagen:'/img/dixit-daydreams.jpg',html:'/Dixit-daydreams.html'},
+                        {id:'P04',nombre:'Exit El museo misterioso',precio:10900,imagen:'/img/exit-el-museo-misterioso.jpg',html:'/TheMind.html'},
+                        {id:'P05',nombre:'Exploding Kittens',precio:19990,imagen:'/img/exploding-kittens-base-en-espanol.jpg',html:'/Display.html'},
+                        {id:'P06',nombre:'Stella Dixit Universe',precio:34990,imagen:'/img/stella-dixit-universe.jpg',html:'/Dixit-daydreams.html'},
+                        {id:'P07',nombre:'The Island',precio:29990,imagen:'/img/the-island.jpg',html:'/TheMind.html'},
+                        {id:'P08',nombre:'Throw Throw Burrito',precio:24990,imagen:'/img/throw-throw-burrito-edicion-extrema-.jpg',html:'/Display.html'},
+                        {id:'P09',nombre:'Azul: Jardín de la Reina',precio:44990,imagen:'/img/azul-jardin-de-la-reina.jpg',html:'/html/TheMind.html'},]
 
         this.constructor = function(){
             if(!localStorage.getItem("carrito")){
@@ -93,15 +93,12 @@
                 <td>${[i.cantidad]} x</td>
                 <td>$${[i.precio]}</td>
                 <td><strong>$${i.cantidad * i.precio}</strong></td>
-                <td><a class="btn btn-danger" href="#" role="button" id="deleteProducto" data-producto="${i.id}"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="4" y1="7" x2="20" y2="7" />
-                <line x1="10" y1="11" x2="10" y2="17" />
-                <line x1="14" y1="11" x2="14" y2="17" />
-                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
-                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
-              </svg></a></td>
-              </tr>
+                <td>
+                <a class="btn btn-danger" href="#" role="button" id="deleteProducto" data-producto="${i.id}">
+                🗑
+                </a>
+                </td>
+                </tr> 
               `;
             }
             $("#productosCarrito").innerHTML = template;
